@@ -1,0 +1,33 @@
+{
+  "name": "top-app",
+  "version": "1.0.3",
+
+  "repoconfig" : {
+    "type": "git",
+    "base": "/base-dir-for-git-repos/"
+  },
+
+  "repo": "/top-app",
+
+  "build" : {
+    "type": "cmake",
+    "options" : {
+      "build_type": "debug"
+    }
+  },
+
+  "deps" : {
+    "build": [
+      {
+        "name": "lib1",
+        "version": "v1.0.0",
+        "repo": "/lib1"
+      },
+      {
+        "name": "lib2",
+        "version": "v2.0.2",
+        "repo": "/lib2"
+      }
+    ]
+  }
+}
